@@ -33,7 +33,7 @@ In this environment, under `SCRIPTS`, paste in the following code to the `BASH` 
 USER_NAME={USER_NAME}
 
 # Install faculty-xval from local repository.
-pip install /project/$USER_NAME/faculty_xval/
+pip install /project/$USER_NAME/faculty-xval/
 
 # Turn USER_NAME into an environment variable.
 echo "export USER_NAME=$USER_NAME" > /etc/faculty_environment.d/app.sh
