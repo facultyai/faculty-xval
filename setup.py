@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name="faculty-xval",
     version="0.1.0",
-    description=("Tools for the cross validation of machine-learning models."),
+    description=("Cross validation of machine-learning models on Faculty platform."),
     url="https://faculty.ai",
     author="Faculty",
     author_email="info@faculty.ai",
