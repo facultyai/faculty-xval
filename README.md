@@ -23,7 +23,7 @@ The environment installs the package `faculty-xval`, and should be applied on ev
 ### Create a job definition
 Create a new job definition named `cross_validation`. In the `COMMAND` section, paste the following:
 
-`faculty_xval_jobs_xval $in_paths`
+`faculty_xval_jobs_xval $IN_PATHS`
 
 Then, add a `PARAMETER` with the name `in_paths`, and ensure that the `Make field mandatory` box is checked.
 
