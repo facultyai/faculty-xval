@@ -67,7 +67,7 @@ fi
 
 This environment should be applied on every server that you create; this includes both 'normal' interactive servers and job servers, as explained next.
 
-##### Create a job definition
+### Create a job definition
 Next, create a new job definition named `cross_validation_{USER_NAME}`. In the `COMMAND` section, paste the following:
 
 `faculty_xval_jobs_xval $in_paths`
