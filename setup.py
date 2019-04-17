@@ -15,7 +15,7 @@ setup(
     description=("Cross validation of machine-learning models on Faculty platform."),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://faculty.ai",
+    url="https://github.com/facultyai/faculty-xval",
     author="Faculty",
     author_email="info@faculty.ai",
     install_requires=[
