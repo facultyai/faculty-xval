@@ -35,7 +35,7 @@ Remember to click `SAVE` when you are finished.
 
 ## Developer installation instructions
 
-##### Select a username
+### Select a username
 Before beginning the installation process, pick an appropriate username, such as `foo`. This does not necessarily need to match your Faculty platform username. In the following instructions, your selected username will be referred to as `{USER_NAME}`.
 
 ##### Clone the repository
