@@ -11,7 +11,7 @@ long_description = long_description.replace("![img|small](img/logo.png)", "")
 
 setup(
     name="faculty-xval",
-    version="0.1.0rc1",
+    version="0.1.0",
     description="Cross validation of machine-learning models on Faculty platform.",
     long_description=long_description,
     long_description_content_type="text/markdown",
