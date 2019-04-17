@@ -46,7 +46,7 @@ cd /project/{USER_NAME}
 git clone https://github.com/facultyai/faculty-xval.git
 ```
 
-##### Create an environment
+### Create an environment
 Next, create an environment in your project named `faculty_xval_{USER_NAME}`.
 
 In this environment, under `SCRIPTS`, paste in the following code to the `BASH` section, remembering to change the `USER_NAME` definition on the second line to your selected `{USER_NAME}`:
