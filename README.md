@@ -18,7 +18,7 @@ Two sets of installation instructions are provided below:
 ##### Create an environment
 In your project on Faculty platform, create an environment named `faculty_xval`. In the `PYTHON` section, select `Python 3` and `pip` from the dropdown menus. Then, type `faculty-xval` in the text box, and click on the `ADD` button.
 
-The environment installs the package `faculty-xval`, and should be applied on every server that you create; this includes both 'normal' interactive servers and job servers, as explained next.
+The environment installs the package `faculty-xval`, and should be applied on every server that you create; this includes both interactive servers and job servers, as explained next.
 
 ##### Create a job definition
 Create a new job definition named `cross_validation`. In the `COMMAND` section, paste the following:
