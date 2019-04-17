@@ -36,13 +36,13 @@ Remember to click `SAVE` when you are finished.
 ## Developer installation instructions
 
 ### Select a username
-Before beginning the installation process, pick an appropriate username, such as `foo`. This does not necessarily need to match your Faculty platform username. In the following instructions, your selected username will be referred to as `{USER_NAME}`.
+Before beginning the installation process, pick an appropriate username, such as `foo`. This does not necessarily need to match your Faculty platform username. In the following instructions, your selected username will be referred to as `<USER_NAME>`.
 
 ##### Clone the repository
-Create the folder `/project/{USER_NAME}`. Then, run the commands:
+Create the folder `/project/<USER_NAME>`. Then, run the commands:
 
 ```bash
-cd /project/{USER_NAME}
+cd /project/<USER_NAME>
 git clone https://github.com/facultyai/faculty-xval.git
 ```
 
@@ -53,14 +53,14 @@ In this environment, under `SCRIPTS`, paste in the following code to the `BASH` 
 
 ```bash
 # Remember to change username!
-USER_NAME={USER_NAME}
+USER_NAME=<USER_NAME>
 
 # Install faculty-xval from local repository.
 pip install /project/$USER_NAME/faculty-xval/
 
 # Turn USER_NAME into an environment variable.
 echo "export USER_NAME=$USER_NAME" > /etc/faculty_environment.d/app.sh
-if [[ -d /etc/service/jupyter ]] ; then 
+if [[ -d /etc/service/jupyter ]] ; then
   sudo sv restart jupyter
 fi
 ```
@@ -68,13 +68,13 @@ fi
 This environment should be applied on every server that you create; this includes both 'normal' interactive servers and job servers, as explained next.
 
 ### Create a job definition
-Next, create a new job definition named `cross_validation_{USER_NAME}`. In the `COMMAND` section, paste the following:
+Next, create a new job definition named `cross_validation_<USER_NAME>`. In the `COMMAND` section, paste the following:
 
 `faculty_xval_jobs_xval $in_paths`
 
 Then, add a `PARAMETER` with the name `in_paths`, and ensure that the `Make field mandatory` box is checked.
 
-Finally, under `SERVER SETTINGS`, add `faculty_xval_{USER_NAME}` to the `ENVIRONMENTS` section.
+Finally, under `SERVER SETTINGS`, add `faculty_xval_<USER_NAME>` to the `ENVIRONMENTS` section.
 
 For cross-validation jobs that are computationally intensive, we recommend using dedicated servers as opposed to running in the cluster. To achieve this, click on `Large and GPU servers` under `SERVER RESOURCES`, and select an appropriate server type from the dropdown menu.
 
