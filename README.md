@@ -20,7 +20,7 @@ In your project on Faculty platform, create an environment named `faculty_xval`.
 
 The environment installs the package `faculty-xval`, and should be applied on every server that you create; this includes both interactive servers and job servers, as explained next.
 
-##### Create a job definition
+### Create a job definition
 Create a new job definition named `cross_validation`. In the `COMMAND` section, paste the following:
 
 `faculty_xval_jobs_xval $in_paths`
