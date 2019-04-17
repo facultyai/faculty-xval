@@ -29,7 +29,7 @@ Then, add a `PARAMETER` with the name `IN_PATHS`, and ensure that the `Make fiel
 
 Finally, under `SERVER SETTINGS`, add `faculty_xval` to the `ENVIRONMENTS` section.
 
-For cross-validation jobs that are computationally intensive, we recommend using dedicated servers as opposed to running in the cluster. To achieve this, click on `Large and GPU servers` under `SERVER RESOURCES`, and select an appropriate server type from the dropdown menu.
+For cross-validation jobs that are computationally intensive, we recommend using dedicated servers as opposed to running on shared infrastructure. To achieve this, click on `Large and GPU servers` under `SERVER RESOURCES`, and select an appropriate server type from the dropdown menu.
 
 Remember to click `SAVE` when you are finished.
 
