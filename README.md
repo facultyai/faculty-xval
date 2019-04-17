@@ -5,7 +5,7 @@ Cross validation of machine-learning models on Faculty platform. At present, the
 ```python
 faculty_xval.validation.JobsCrossValidator
 ```
-Additional information is found in the notebooks of the `examples` directory.
+Additional information is found in the example notebooks provided. Please have a look at the section `Try out the examples` below.
 
 The package supports `keras` and `sklearn` models. Whilst one can write custom models that are compatible with `faculty-xval`, no guarantee is given that the package handles these situations correctly, in particular because of issues concerning the randomisation of weights.
 
@@ -81,7 +81,7 @@ For cross-validation jobs that are computationally intensive, we recommend using
 Remember to click `SAVE` when you are finished.
 
 ## Try out the examples
-Examples of cross validation with `faculty-xval` for the different types of model are provided in the directories `examples/keras` and `examples/sklearn`. Usage instructions are then divided in two notebooks:
+Please clone this repository. Examples of cross validation with `faculty-xval` for the different types of model are provided in the directories `examples/keras` and `examples/sklearn`. Usage instructions are then divided in two notebooks:
 
 * `jobs_cross_validator_run.ipynb` loads the data, instantiates the model, and starts a Faculty job that carries out the cross validation.
 * `jobs_cross_validator_analyse.ipynb` gathers the results from the cross validation, reloads the target data, and calculates the model accuracy over multiple train-test splits.
