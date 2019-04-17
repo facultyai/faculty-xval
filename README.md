@@ -25,7 +25,7 @@ Create a new job definition named `cross_validation`. In the `COMMAND` section, 
 
 `faculty_xval_jobs_xval $IN_PATHS`
 
-Then, add a `PARAMETER` with the name `in_paths`, and ensure that the `Make field mandatory` box is checked.
+Then, add a `PARAMETER` with the name `IN_PATHS`, and ensure that the `Make field mandatory` box is checked.
 
 Finally, under `SERVER SETTINGS`, add `faculty_xval` to the `ENVIRONMENTS` section.
 
