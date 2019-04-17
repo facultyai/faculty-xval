@@ -1,16 +1,27 @@
+from os import path
 from setuptools import setup
+
+# Read the contents of the README file.
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, "README.md"), encoding="utf-8") as f:
+    long_description = f.read()
+
+# Remove logo as not supported on PyPI.
+long_description = long_description.replace("![img|small](img/logo.png)", "")
 
 setup(
     name="faculty-xval",
     version="0.1.0",
-    description=("Tools for the cross validation of machine-learning models."),
-    url="https://faculty.ai",
+    description="Cross validation of machine-learning models on Faculty platform.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/facultyai/faculty-xval",
     author="Faculty",
     author_email="info@faculty.ai",
     install_requires=[
         "click",
         "faculty",
-        "keras",
+        "keras>=2.2.4",
         "numpy",
         "scikit_learn",
         "tensorflow",
