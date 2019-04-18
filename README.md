@@ -66,7 +66,7 @@ Before beginning the installation process, pick an appropriate username, such as
 In the following instructions, your selected username will be referred to as
 `<USER_NAME>`.
 
-##### Clone the repository
+### Clone the repository
 
 Create the folder `/project/<USER_NAME>`. Then, run the commands:
 
